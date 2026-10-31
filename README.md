@@ -1,3 +1,16 @@
+# SchwarzDigits fork: refinery over the SchwarzDigits rusqlite
+
+This is [refinery](https://github.com/rust-db/refinery) with one change:
+`refinery-core` (and the examples) take `rusqlite` from
+[SchwarzDigits/rusqlite](https://github.com/SchwarzDigits/rusqlite), the fork
+whose `bundled` feature compiles SQLite3 Multiple Ciphers, by tag. A
+dependency graph may hold one `libsqlite3-sys` (`links = "sqlite3"`), so a
+consumer of that fork needs its migrations runner on the same rusqlite.
+Nothing else differs; the branch `sqlite3mc/<refinery line>` is rebased on
+upstream's release tags and consumed as a git dependency by its tag.
+
+---
+
 <div align="center">
     <img src="assets/logo_wide.svg" alt="refinery Logo">
 
