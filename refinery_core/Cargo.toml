@@ -34,7 +34,7 @@ walkdir = "2.3.1"
 # SchwarzDigits fork: rusqlite from the SchwarzDigits fork that bundles
 # SQLite3 Multiple Ciphers, by tag — the one rusqlite of the graph (a second
 # libsqlite3-sys would collide on `links = "sqlite3"`).
-rusqlite = { git = "https://github.com/SchwarzDigits/rusqlite", tag = "v0.37.0-sqlite3mc-2.5.1", version = "0.37", optional = true }
+rusqlite = { git = "https://github.com/SchwarzDigits/rusqlite", tag = "v0.37.0-sqlite3mc-2.7.1", version = "0.37", optional = true }
 postgres = { version = ">=0.17, <= 0.19", optional = true }
 native-tls = { version = "0.2", optional = true }
 postgres-native-tls = { version = "0.5", optional = true }
